@@ -1,0 +1,34 @@
+﻿<Page x:Class="Market_System.Customer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Market_System"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="66"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <Label FontSize="20" FontWeight="SemiBold" Grid.Row="0" Margin="0,62,662,1" Content="Email"/>
+        <Label FontSize="20" FontWeight="SemiBold" Grid.Row="1" Margin="0,10,719,0" Content="Adress"/>
+        <Label FontSize="20" FontWeight="SemiBold" Margin="0,9,687,60" Content="FullName"/>
+        <Label FontSize="20" FontWeight="SemiBold" Margin="422,8,297,42" Content="Phone"/>
+        <Label FontSize="20" FontWeight="SemiBold" Margin="422,62,297,10" Content="ID"/>
+
+        <TextBox x:Name="NameBox" Grid.Row="0" Margin="118,14,396,60"/>
+        <TextBox x:Name="EmailBox" Grid.Row="0" Margin="118,64,396,10"/>
+        <TextBox x:Name="AdressBox" Grid.Row="1" Margin="118,16,400,16"/>
+        <TextBox x:Name="PhoneBox" Margin="508,14,10,58"/>
+        <TextBox x:Name="IDBox" Margin="508,68,10,4"/>
+
+        <Button Name="Insert" Grid.Row="2" Margin="103,0,598,241" BorderBrush="Black" FontSize="20" Click="Insert_Click" >Insert</Button>
+        <Button Name="Update" Grid.Row="2" Margin="351,0,343,241" BorderBrush="Black" FontSize="20" Click="Update_Click" >Update</Button>
+        <Button Name="Refresh" Grid.Row="2" Margin="485,2,209,239" BorderBrush="Black" FontSize="20" Click="Refresh_Click" >Refresh</Button>
+        <Button Name="Delete" Grid.Row="2" Margin="222,0,469,239" BorderBrush="Black" FontSize="20" Click="Delete_Click" >Delete</Button>
+
+        <DataGrid x:Name="ListDG" Grid.Row="2" Margin="128,53,128,29" Background="Gray" BorderBrush="Black" BorderThickness="2"></DataGrid>
+    </Grid>
+</Page>
